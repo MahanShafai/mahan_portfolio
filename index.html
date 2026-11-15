@@ -1,0 +1,692 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#080d19">
+    <meta name="description" content="وب‌سایت شخصی ماهان شفائی؛ معرفی مهارت‌ها، پروژه‌ها و نمونه‌کارهای برنامه‌نویسی و طراحی وب.">
+
+    <title>MAHAN.DEV | پورتفولیوی شخصی ماهان شفائی</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/style.css/style.css">
+
+    <!-- Persian Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">MAHAN<span>.DEV</span></div>
+            <div class="loader-line">
+                <span></span>
+            </div>
+            <p>در حال آماده‌سازی دنیای من...</p>
+        </div>
+    </div>
+
+    <!-- Particle Background -->
+    <canvas id="particles"></canvas>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+
+            <a href="#home" class="logo">
+                MAHAN<span>.DEV</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="باز کردن منو">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="navbar" id="navbar">
+                <a href="#home">خانه</a>
+                <a href="#about">درباره من</a>
+                <a href="#skills">مهارت‌ها</a>
+                <a href="#projects">پروژه‌ها</a>
+                <a href="#contact">ارتباط با من</a>
+            </nav>
+
+            <button class="theme-toggle" id="themeToggle" aria-label="تغییر تم">
+                <i class="fas fa-sun"></i>
+            </button>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+            <div class="container hero-container">
+
+                <div class="hero-content reveal">
+
+                    <div class="status">
+                        <span class="status-dot"></span>
+                        آماده یادگیری و خلق ایده‌های جدید
+                    </div>
+
+                    <p class="hero-intro">سلام، من هستم</p>
+
+                    <h1>
+                        ماهان <span>شفائی</span>
+                    </h1>
+
+                    <h2 class="hero-job">
+                        من یک
+                        <span id="typingText"></span>
+                        <span class="typing-cursor">|</span>
+                    </h2>
+
+                    <p class="hero-description">
+                        به دنیای دیجیتال من خوش آمدید.
+                        من به طراحی وب، برنامه‌نویسی و ساخت تجربه‌های
+                        دیجیتال مدرن و خلاقانه علاقه‌مندم.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#projects" class="btn btn-primary">
+                            مشاهده پروژه‌ها
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline">
+                            ارتباط با من
+                            <i class="fas fa-paper-plane"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="social-links">
+
+                        <a href="https://github.com/MahanShafai"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="گیت‌هاب">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                        <a href="https://t.me/mahansh"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="تلگرام">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+
+                        <a href="https://instagram.com/mahan__shafai"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="اینستاگرام">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Profile Image -->
+                <div class="hero-image-area reveal">
+
+                    <div class="image-glow"></div>
+
+                    <div class="profile-frame tilt-card">
+                        <div class="profile-border">
+                            <img
+                                src="/ask/e748646f-c809-40f6-af61-2df3799980f8.jpg"
+                                alt="تصویر پروفایل ماهان شفائی"
+                                class="profile-image"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="floating-card floating-card-one">
+                        <i class="fas fa-code"></i>
+                        <span>Web Development</span>
+                    </div>
+
+                    <div class="floating-card floating-card-two">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>Creative Mind</span>
+                    </div>
+
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+
+                </div>
+
+            </div>
+
+            <a href="#about" class="scroll-down">
+                <span>بیشتر بدانید</span>
+                <i class="fas fa-chevron-down"></i>
+            </a>
+
+        </section>
+
+        <!-- About Section -->
+        <section class="section about-section" id="about">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-label">ABOUT ME</span>
+                    <h2>درباره <span>من</span></h2>
+                    <p>کمی بیشتر با من و مسیر من آشنا شوید.</p>
+                </div>
+
+                <div class="about-content reveal">
+
+                    <div class="about-icon">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+
+                    <div class="about-text">
+
+                        <h3>من ماهان شفائی هستم</h3>
+
+                        <p>
+                            علاقه‌مند به دنیای برنامه‌نویسی، طراحی وب و فناوری.
+                            هدف من یادگیری مداوم، توسعه مهارت‌های فنی و ساخت
+                            وب‌سایت‌هایی زیبا، کاربردی و حرفه‌ای است.
+                        </p>
+
+                        <p>
+                            باور دارم هر ایده می‌تواند با خلاقیت، تمرین و
+                            پشتکار به یک پروژه واقعی تبدیل شود.
+                        </p>
+
+                        <div class="about-tags">
+                            <span>خلاقیت</span>
+                            <span>یادگیری</span>
+                            <span>برنامه‌نویسی</span>
+                            <span>توسعه وب</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section skills-section" id="skills">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-label">MY SKILLS</span>
+                    <h2>مهارت‌های <span>من</span></h2>
+                    <p>ابزارهایی که با آن‌ها ایده‌ها را به واقعیت تبدیل می‌کنم.</p>
+                </div>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card reveal">
+                        <div class="skill-info">
+                            <i class="fab fa-html5 html-icon"></i>
+                            <h3>HTML</h3>
+                            <span>ساختار صفحات وب</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="85%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card reveal">
+                        <div class="skill-info">
+                            <i class="fab fa-css3-alt css-icon"></i>
+                            <h3>CSS</h3>
+                            <span>طراحی و استایل‌دهی</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="75%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card reveal">
+                        <div class="skill-info">
+                            <i class="fab fa-js js-icon"></i>
+                            <h3>JavaScript</h3>
+                            <span>برنامه‌نویسی وب</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="55%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card reveal">
+                        <div class="skill-info">
+                            <i class="fab fa-python python-icon"></i>
+                            <h3>Python</h3>
+                            <span>برنامه‌نویسی</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="45%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card reveal">
+                        <div class="skill-info">
+                            <i class="fas fa-palette photoshop-icon"></i>
+                            <h3>Photoshop</h3>
+                            <span>ویرایش و طراحی گرافیکی</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="60%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card reveal">
+                        <div class="skill-info">
+                            <i class="fas fa-code code-icon"></i>
+                            <h3>VS Code</h3>
+                            <span>محیط توسعه و کدنویسی</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="80%"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <p class="skills-note">
+                    <i class="fas fa-info-circle"></i>
+                    درصدها نمایشی هستند و می‌توانی متناسب با سطح واقعی مهارت‌هایت تغییرشان بدهی.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section projects-section" id="projects">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-label">MY PROJECTS</span>
+                    <h2>پروژه‌های <span>من</span></h2>
+                    <p>بخشی از ایده‌ها و تجربه‌های من در دنیای برنامه‌نویسی.</p>
+                </div>
+
+                <div class="projects-grid">
+
+                    <article class="project-card tilt-card reveal">
+
+                        <div class="project-number">01</div>
+
+                        <div class="project-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+
+                        <span class="project-type">Management System</span>
+
+                        <h3>سامانه مدیریت دانشجویان</h3>
+
+                        <p>
+                            پروژه‌ای برای مدیریت اطلاعات دانشجویان و سامان‌دهی
+                            فرایندهای آموزشی.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <a href="#" class="project-link" aria-label="مشاهده پروژه">
+                            مشاهده پروژه
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
+
+                    </article>
+
+                    <article class="project-card tilt-card reveal">
+
+                        <div class="project-number">02</div>
+
+                        <div class="project-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+
+                        <span class="project-type">Online Shopping</span>
+
+                        <h3>سایت فروشگاهی اسمارت شاپ</h3>
+
+                        <p>
+                            طراحی یک فروشگاه اینترنتی مدرن با تجربه کاربری
+                            جذاب و ساختار منظم.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <a href="#" class="project-link" aria-label="مشاهده پروژه">
+                            مشاهده پروژه
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
+
+                    </article>
+
+                    <article class="project-card tilt-card reveal">
+
+                        <div class="project-number">03</div>
+
+                        <div class="project-icon">
+                            <i class="fas fa-cart-shopping"></i>
+                        </div>
+
+                        <span class="project-type">E-Commerce</span>
+
+                        <h3>پروژه سایت فروشگاهی من</h3>
+
+                        <p>
+                            یک تجربه عملی در طراحی و پیاده‌سازی صفحات
+                            فروشگاهی و امکانات آن.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <a href="#" class="project-link" aria-label="مشاهده پروژه">
+                            مشاهده پروژه
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
+
+                    </article>
+
+                    <article class="project-card tilt-card reveal">
+
+                        <div class="project-number">04</div>
+
+                        <div class="project-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+
+                        <span class="project-type">Personal Portfolio</span>
+
+                        <h3>پورتفولیوی شخصی حرفه‌ای من</h3>
+
+                        <p>
+                            همین وب‌سایت؛ معرفی مهارت‌ها، پروژه‌ها و مسیر
+                            حرفه‌ای من در دنیای فناوری.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <a
+                            href="https://github.com/MahanShafai/mahan_portfolio"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link"
+                        >
+                            مشاهده در گیت‌هاب
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-label">CONTACT ME</span>
+                    <h2>ارتباط با <span>من</span></h2>
+                    <p>
+                        برای همکاری، پیشنهاد یا گفتگو می‌توانی از راه‌های زیر
+                        با من در ارتباط باشی.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+
+                    <a href="tel:09028426359" class="contact-card reveal">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>شماره تماس اول</h3>
+                        <p dir="ltr">09028426359</p>
+                        <span>تماس بگیرید</span>
+                    </a>
+
+                    <a href="tel:09180134450" class="contact-card reveal">
+                        <div class="contact-icon">
+                            <i class="fas fa-mobile-screen"></i>
+                        </div>
+                        <h3>شماره تماس دوم</h3>
+                        <p dir="ltr">09180134450</p>
+                        <span>تماس بگیرید</span>
+                    </a>
+
+                    <a
+                        href="https://t.me/mahansh"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-card reveal"
+                    >
+                        <div class="contact-icon telegram">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <h3>تلگرام</h3>
+                        <p dir="ltr">@mahansh</p>
+                        <span>ارسال پیام</span>
+                    </a>
+
+                    <a
+                        href="https://instagram.com/mahan__shafai"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-card reveal"
+                    >
+                        <div class="contact-icon instagram">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <h3>اینستاگرام</h3>
+                        <p dir="ltr">mahan__shafai</p>
+                        <span>مشاهده صفحه</span>
+                    </a>
+
+                    <a
+                        href="https://github.com/MahanShafai"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-card reveal"
+                    >
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3>گیت‌هاب</h3>
+                        <p dir="ltr">MahanShafai</p>
+                        <span>مشاهده مخزن‌ها</span>
+                    </a>
+
+                    
+
+                </div>
+
+                
+
+            </div>
+            
+<!-- Email Contact Form -->
+<div class="email-form-wrapper reveal">
+
+    <div class="email-form-heading">
+        <span class="section-label">SEND A MESSAGE</span>
+        <h3>پیامت رو <span>برام بفرست</span></h3>
+        <p>ایده، پیشنهاد یا درخواست همکاری داری؟ خوشحال می‌شم ازت بشنوم.</p>
+    </div>
+
+    <form id="emailForm" class="email-form">
+
+        <div class="form-row">
+
+            <div class="form-group">
+                <label for="user_name">نام و نام خانوادگی</label>
+                <div class="input-wrapper">
+                    <i class="fas fa-user"></i>
+                    <input
+                        type="text"
+                        id="user_name"
+                        name="name"
+                        placeholder="نام شما"
+                        required
+                    >
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="user_email">آدرس ایمیل</label>
+                <div class="input-wrapper">
+                    <i class="fas fa-envelope"></i>
+                    <input
+                        type="email"
+                        id="user_email"
+                        name="email"
+                        placeholder="example@gmail.com"
+                        dir="ltr"
+                        required
+                    >
+                </div>
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <label for="subject">موضوع پیام</label>
+            <div class="input-wrapper">
+                <i class="fas fa-heading"></i>
+                <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="موضوع پیام شما"
+                    required
+                >
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="message">متن پیام</label>
+            <div class="input-wrapper textarea-wrapper">
+                <i class="fas fa-message"></i>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="پیامت رو اینجا بنویس..."
+                    required
+                ></textarea>
+            </div>
+        </div>
+
+        <button type="submit" class="email-submit-btn" id="emailSubmitBtn">
+            <span>ارسال پیام</span>
+            <i class="fas fa-paper-plane"></i>
+        </button>
+
+        <div id="emailStatus" class="email-status" role="status" aria-live="polite"></div>
+
+    </form>
+
+</div>
+
+
+        </section>
+
+        <!-- Final CTA -->
+        <section class="final-cta">
+
+            <div class="container reveal">
+
+                <span class="section-label">LET'S BUILD SOMETHING</span>
+
+                <h2>ایده‌ای در ذهن داری؟</h2>
+
+                <p>بیایید با هم چیزی متفاوت خلق کنیم.</p>
+
+                <a
+                    href="https://t.me/mahansh"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary"
+                >
+                    شروع گفتگو
+                    <i class="fas fa-paper-plane"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <a href="#home" class="logo">
+                MAHAN<span>.DEV</span>
+            </a>
+
+            <p>ساخته شده با علاقه و خلاقیت توسط ماهان شفائی</p>
+
+            <p class="copyright">
+                © <span id="year"></span> تمامی حقوق محفوظ است.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- Back To Top -->
+    <button class="back-to-top" id="backToTop" aria-label="بازگشت به بالا">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+
+    <script src="/script.js/script.js"></script>
+
+</body>
+</html>
